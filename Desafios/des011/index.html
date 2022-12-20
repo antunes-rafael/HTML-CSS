@@ -4,24 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trabalhando com imagens sobrepostas</title>
+    <title>Desafio do astronauta</title>
     <style>
             #img1 {
                 background-image: url("imagens/espaco.jpeg");
                 background-color: black;
                 background-size: cover;
+                background-repeat: no-repeat;
                 position: relative;
-                height: 100vh;
-                padding: 10px;
+                height: 97vh;
+            
 
             }
 
             #img2 {
-                height: 96vh;
+                height: 50vh;
+                width: 50vh;
                 background-image: url("imagens/astronauta.png");
-                background-size: 450px;
+                background-size: 100% 100%;
                 background-repeat: no-repeat;
-                background-position: center center; 
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%); 
             }
     
     
